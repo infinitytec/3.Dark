@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         3.Dark
 // @namespace    infinitytec.github.io
-// @version      1.1
+// @version      1.1.1
 // @description  Dark theme for 3.0. Distributed under the MIT license.
 // @author       infinitytec
 // @match        https://scratch.mit.edu/projects/*
@@ -55,7 +55,7 @@
     //Fullscreen view
     GM_addStyle(".stage_stage-wrapper-overlay_fmZuD, .stage-header_stage-header-wrapper-overlay_5vfJa{background: black;} .stage_stage-overlay-content_ePv_6 {border: none;} ");
     //Library background
-    GM_addStyle(".library_library-scroll-grid_1jyXm {background: #2d3e62; color: white;} ");
+    GM_addStyle(".library_library-scroll-grid_1jyXm, .modal_modal-content_1h3ll.modal_full-screen_FA4cr {background: #2d3e62; color: white;} ");
     //Library items & filter bar
     GM_addStyle(".library-item_library-item-extension_3xus9, .library-item_library-item_1DcMO, .library_filter-bar_1W0DW {background: #2d3e62; .library-item_library-item-extension_3xus9 span, .library-item_featured-extension-metadata_3D8E8 {color: white !important;}");
     //Text input
