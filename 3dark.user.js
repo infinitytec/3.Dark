@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         3.Dark
 // @namespace    infinitytec.github.io
-// @version      1.1.1
+// @version      1.2
 // @description  Dark theme for 3.0. Distributed under the MIT license.
 // @author       infinitytec
 // @match        https://scratch.mit.edu/projects/*
@@ -18,8 +18,8 @@
     GM_addStyle(".gui_body-wrapper_-N0sA{background: #051638;}");
     //Scripting area background
     GM_addStyle(".blocklyMainBackground{fill: #273552 !important;}");
-    //Right-click
-    GM_addStyle(".context-menu_context-menu_2SJM-, .blocklyWidgetDiv .goog-menu{background: #2d3e62; color: white !important; border: 1px solid white;} .goog-menuitem-content {color: white;} /*Highlight*/ .blocklyWidgetDiv .goog-menuitem-highlight, .blocklyWidgetDiv .goog-menuitem-hover, .context-menu_menu-item_3cioN:hover {background-color:#3d4e72 !important;}");
+    //Right-click & pop-ups
+    GM_addStyle(".context-menu_context-menu_2SJM-, .blocklyWidgetDiv .goog-menu, .Popover-body {background: #2d3e62 !important; color: white !important; border: 1px solid white;} .goog-menuitem-content, .color-picker_row-header_173LQ {color: white;} /*Highlight*/ .blocklyWidgetDiv .goog-menuitem-highlight, .blocklyWidgetDiv .goog-menuitem-hover, .context-menu_menu-item_3cioN:hover {background-color:#3d4e72 !important;}");
     //Palette
     GM_addStyle(".blocklyFlyoutBackground {fill: #2f4066 !important;}");
     //Palette text
@@ -59,5 +59,7 @@
     //Library items & filter bar
     GM_addStyle(".library-item_library-item-extension_3xus9, .library-item_library-item_1DcMO, .library_filter-bar_1W0DW {background: #2d3e62; .library-item_library-item-extension_3xus9 span, .library-item_featured-extension-metadata_3D8E8 {color: white !important;}");
     //Text input
-    GM_addStyle("input[type=text]{background: #2f4066; color: white !important;} input[type=text]:hover, input[type=text]:focus {background: #3f5076;}");
+    GM_addStyle("input[type=text], .input_input-form_1Y0wX, .prompt_variable-name-text-input_1iu8- {background: #2f4066; color: white !important;} input[type=text]:hover, input[type=text]:focus {background: #3f5076;}");
+    //Buttons (inverted for dark theme)
+    GM_addStyle(".blocklyZoom,  .stage-header_stage-button_hkl9B, .sound-editor_round-button_3NLcW, .sound-editor_button-group_SFPoV {filter: invert(100) hue-rotate(180deg);}");
 })();
