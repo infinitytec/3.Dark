@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         3.Dark
 // @namespace    infinitytec.github.io
-// @version      1.2
+// @version      1.3
 // @description  Dark theme for 3.0. Distributed under the MIT license.
 // @author       infinitytec
 // @match        https://scratch.mit.edu/projects/*
@@ -24,8 +24,8 @@
     GM_addStyle(".blocklyFlyoutBackground {fill: #2f4066 !important;}");
     //Palette text
     GM_addStyle(".blocklyFlyoutLabelText{fill: white !important;}");
-    //Toolbox
-    GM_addStyle(".blocklyToolboxDiv, .scratchCategoryMenu {background: #2f4066; color: white;}");
+    //Toolbox, extension connection box
+    GM_addStyle(".connection-modal_bottom-area_AHeQ3, .connection-modal_body_3YO9j, .blocklyToolboxDiv, .scratchCategoryMenu {background: #2f4066; color: white;}");
     //Selected category
     GM_addStyle(".scratchCategoryMenuItem.categorySelected {background: #ffffff22;}");
     //Sprite and stage selection area
@@ -57,9 +57,11 @@
     //Library background
     GM_addStyle(".library_library-scroll-grid_1jyXm, .modal_modal-content_1h3ll.modal_full-screen_FA4cr {background: #2d3e62; color: white;} ");
     //Library items & filter bar
-    GM_addStyle(".library-item_library-item-extension_3xus9, .library-item_library-item_1DcMO, .library_filter-bar_1W0DW {background: #2d3e62; .library-item_library-item-extension_3xus9 span, .library-item_featured-extension-metadata_3D8E8 {color: white !important;}");
+    GM_addStyle(" .library-item_library-item-extension_3xus9, .library-item_library-item_1DcMO, .library_filter-bar_1W0DW {background: #2d3e62;} .library-item_library-item-extension_3xus9 span, .library-item_featured-extension-metadata_3D8E8, .library-item_library-item-name_2qMXu {color: white !important;}");
     //Text input
     GM_addStyle("input[type=text], .input_input-form_1Y0wX, .prompt_variable-name-text-input_1iu8- {background: #2f4066; color: white !important;} input[type=text]:hover, input[type=text]:focus {background: #3f5076;}");
     //Buttons (inverted for dark theme)
     GM_addStyle(".blocklyZoom,  .stage-header_stage-button_hkl9B, .sound-editor_round-button_3NLcW, .sound-editor_button-group_SFPoV {filter: invert(100) hue-rotate(180deg);}");
+    //Set the selected costume/backdrop to have a transparent background as default
+    GM_addStyle(".sprite-selector-item_is-selected_24tQj {background:transparent !important;}");
 })();
