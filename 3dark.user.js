@@ -33,7 +33,7 @@
     GM_addStyle(".sprite-selector_sprite-selector_2KgCX, .stage-selector_stage-selector_3oWOr, .stage-selector_label_1MCfr, .stage-selector_count_2QK7D {background: var(--accent); color: var(--text);}");
     GM_addStyle(".sprite-info_sprite-info_3EyZh, .stage-selector_header_2GVr1, .stage-selector_header-title_33xCt, .stage-selector_header-title_33xCt, .sprite-selector-item_sprite-selector-item_kQm-i:hover {background: var(--secondary-bg); color: var(--text);}");
     //Palette Buttons
-    GM_addStyle(".blocklyFlyoutButtonBackground {filter: brightness(90%) !important;}.blocklyFlyoutButtonBackground:hover, .blocklyFlyoutButton:hover {filter: brightness(120%) !important;}");
+    GM_addStyle(".blocklyFlyoutButtonBackground {fill: var(--accent) !important;}.blocklyFlyoutButtonBackground:hover, .blocklyFlyoutButton:hover {fill: var(--accent) !important; filter: brightness(110%) !important;}");
     GM_addStyle("blocklyFlyoutButton > text.blocklyText {fill: var(--text) !important;}");
     //Text fill of "Make A" buttons
     GM_addStyle(".blocklyFlyoutButton .blocklyText {fill: var(--text) !important;");
