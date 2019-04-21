@@ -12,6 +12,7 @@
 (function() {
     'use strict';
     //3.0 Theme Userscript Framework by infinitytec. Released under the MIT license.
+    //Set colors for the editor. Names should explain what they are. They will automatically be applied to different parts of the editor. For the purpose of simplification, the red cancel button and the hover/active/focus effects are hard-coded. The effects use filters so they should be good-to-go in most cases.
     GM_addStyle(":root {--main-bg: #051638; --secondary-bg: #273552; --accent: #2f4066; --text: #ffffff;}");
     //Main UI bar, similar bars, and dropdown menu
     GM_addStyle(".menu-bar_main-menu_3wjWH, .modal_header_1h7ps, .menu-bar_account-info-group_MeJZP, .menu_menu_3k7QT, .project-title-input_title-field_en5Gd:focus {background: var(--accent);}");
