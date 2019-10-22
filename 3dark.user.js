@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         3.Dark
 // @namespace    infinitytec.github.io
-// @version      1.4
+// @version      1.5
 // @description  Dark theme for 3.0. Distributed under the MIT license.
 // @author       infinitytec
 // @match        https://scratch.mit.edu/projects/*
+// @match        https://scratch.org/projects/*
 // @grant        GM_addStyle
 // @updateURL    https://github.com/infinitytec/3.Dark/raw/master/3dark.user.js
 // ==/UserScript==
