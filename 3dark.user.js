@@ -42,7 +42,7 @@
      //Backpack header
     GM_addStyle(".backpack_backpack-header_6ltCS {background: var(--accent); color: var(--text);}");
      //Backpack
-    GM_addStyle(".backpack_backpack-list-inner_10a2A {background: var(--secondary-bg);} .backpack_backpack-item_hwqzQ, .sprite-selector-item_sprite-image-outer_Xs0wN, .backpack_backpack-item_hwqzQ > div {background: var(--main-bg);} .backpack_backpack-item_hwqzQ img {mix-blend-mode: normal;}");
+    GM_addStyle(".backpack_backpack-list-inner_10a2A {background: var(--secondary-bg);} .backpack_backpack-item_hwqzQ, .sprite-selector-item_sprite-image-outer_Xs0wN, .backpack_backpack-item_hwqzQ > div {background: var(--main-bg); border-radius: 0.5rem 0.5rem 0 0;} .backpack_backpack-item_hwqzQ img {mix-blend-mode: normal;}");
      //Paint & sound editor sidebar
     GM_addStyle(".selector_list-area_1Xbj_{background: var(--accent);} .selector_new-buttons_2qHDd::before {background: none;}");
      //Paint & sound editor main
@@ -69,4 +69,8 @@
     GM_addStyle(".sprite-selector-item_is-selected_24tQj {background:transparent !important;}");
     //Fixing white area around the paint editor
     GM_addStyle(".paint-editor_canvas-container_x2D0a {border: 1px solid var(--accent); overflow: hidden; }");
+    //Gallery search box fixes
+    GM_addStyle(".filter_filter_1JFal{background: var(--secondary-bg); overflow: hidden;} .filter_filter-input_1iiEt::placeholder{color: var(--text);}");
+    //Paint editor button contrast fixes
+    GM_addStyle(".paint-editor_button-group-button-icon_10kVn {filter: brightness(100);}");
 })();
