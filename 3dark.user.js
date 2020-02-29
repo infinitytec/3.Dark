@@ -72,5 +72,5 @@
     //Gallery search box fixes
     GM_addStyle(".filter_filter_1JFal{background: var(--secondary-bg); overflow: hidden;} .filter_filter-input_1iiEt::placeholder{color: var(--text);}");
     //Paint editor button contrast fixes
-    GM_addStyle(".paint-editor_button-group-button-icon_10kVn {filter: brightness(100);}");
+    GM_addStyle(".paint-editor_button-group-button-icon_10kVn, .color-picker_swatch-icon_Z7osI {filter: brightness(100);}");
 })();
