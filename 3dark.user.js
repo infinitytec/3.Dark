@@ -71,6 +71,6 @@
     GM_addStyle(".paint-editor_canvas-container_x2D0a {border: 1px solid var(--accent); overflow: hidden; }");
     //Gallery search box fixes
     GM_addStyle(".filter_filter_1JFal{background: var(--secondary-bg); overflow: hidden;} .filter_filter-input_1iiEt::placeholder{color: var(--text);}");
-    //Paint editor button contrast and extension icon fixes
-    GM_addStyle(".paint-editor_button-group-button-icon_10kVn, .color-picker_swatch-icon_Z7osI, .scratchCategoryItemIcon {filter: brightness(100);}");
+    //Paint editor button contrast and music extension icon fixes
+    GM_addStyle(".paint-editor_button-group-button-icon_10kVn, .color-picker_swatch-icon_Z7osI, .scratchCategoryId-music > .scratchCategoryItemIcon {filter: brightness(100);}");
 })();
