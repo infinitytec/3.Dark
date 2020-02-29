@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         3.Dark
 // @namespace    infinitytec.github.io
-// @version      1.5
+// @version      1.6
 // @description  Dark theme for 3.0. Distributed under the MIT license.
 // @author       infinitytec
 // @match        https://scratch.mit.edu/projects/*
@@ -18,7 +18,7 @@
     //Main UI bar, similar bars, and dropdown menu
     GM_addStyle(".menu-bar_main-menu_3wjWH, .modal_header_1h7ps, .menu-bar_account-info-group_MeJZP, .menu_menu_3k7QT, .project-title-input_title-field_en5Gd:focus {background: var(--accent);}");
     //Main background
-    GM_addStyle(".gui_body-wrapper_-N0sA{background: var(--main-bg);}");
+    GM_addStyle(".gui_body-wrapper_-N0sA, .blocklySvg {background: var(--main-bg);}");
     //Scripting area background
     GM_addStyle(".blocklyMainBackground{fill: var(--secondary-bg) !important;}");
     //Right-click & pop-ups
@@ -42,7 +42,7 @@
      //Backpack header
     GM_addStyle(".backpack_backpack-header_6ltCS {background: var(--accent); color: var(--text);}");
      //Backpack
-    GM_addStyle(".backpack_backpack-list-inner_10a2A {background: var(--secondary-bg);} .backpack_backpack-item_hwqzQ{background: white;}");
+    GM_addStyle(".backpack_backpack-list-inner_10a2A {background: var(--secondary-bg);} .backpack_backpack-item_hwqzQ, .sprite-selector-item_sprite-image-outer_Xs0wN, .backpack_backpack-item_hwqzQ > div {background: var(--main-bg);} .backpack_backpack-item_hwqzQ img {mix-blend-mode: normal;}");
      //Paint & sound editor sidebar
     GM_addStyle(".selector_list-area_1Xbj_{background: var(--accent);} .selector_new-buttons_2qHDd::before {background: none;}");
      //Paint & sound editor main
@@ -67,4 +67,6 @@
     GM_addStyle(".blocklyZoom,  .stage-header_stage-button_hkl9B, .sound-editor_round-button_3NLcW, .sound-editor_button-group_SFPoV {filter: invert(100) hue-rotate(180deg);}");
     //Set the selected costume/backdrop to have a transparent background as default
     GM_addStyle(".sprite-selector-item_is-selected_24tQj {background:transparent !important;}");
+    //Fixing white area around the paint editor
+    GM_addStyle(".paint-editor_canvas-container_x2D0a {border: 1px solid var(--accent); overflow: hidden; }");
 })();
