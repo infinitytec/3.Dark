@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         3.Dark
 // @namespace    infinitytec.github.io
-// @version      1.6
+// @version      1.6.1
 // @description  Dark theme for 3.0. Distributed under the MIT license.
 // @author       infinitytec
 // @match        https://scratch.mit.edu/projects/*
 // @match        https://scratch.org/projects/*
+// @match        https://aero-a.github.io/scratch-gui/*
 // @grant        GM_addStyle
 // @updateURL    https://github.com/infinitytec/3.Dark/raw/master/3dark.user.js
 // ==/UserScript==
@@ -42,7 +43,7 @@
      //Backpack header
     GM_addStyle(".backpack_backpack-header_6ltCS {background: var(--accent); color: var(--text);}");
      //Backpack
-    GM_addStyle(".backpack_backpack-list-inner_10a2A {background: var(--secondary-bg);} .backpack_backpack-item_hwqzQ, .sprite-selector-item_sprite-image-outer_Xs0wN, .backpack_backpack-item_hwqzQ > div {background: var(--main-bg);} .backpack_backpack-item_hwqzQ img {mix-blend-mode: normal;}");
+    GM_addStyle(".backpack_backpack-list-inner_10a2A {background: var(--secondary-bg);} .backpack_backpack-item_hwqzQ, .sprite-selector-item_sprite-image-outer_Xs0wN, .backpack_backpack-item_hwqzQ > div {background: var(--main-bg); border-radius: 0.5rem 0.5rem 0 0;} .backpack_backpack-item_hwqzQ img {mix-blend-mode: normal;}");
      //Paint & sound editor sidebar
     GM_addStyle(".selector_list-area_1Xbj_{background: var(--accent);} .selector_new-buttons_2qHDd::before {background: none;}");
      //Paint & sound editor main
@@ -69,4 +70,8 @@
     GM_addStyle(".sprite-selector-item_is-selected_24tQj {background:transparent !important;}");
     //Fixing white area around the paint editor
     GM_addStyle(".paint-editor_canvas-container_x2D0a {border: 1px solid var(--accent); overflow: hidden; }");
+    //Gallery search box fixes
+    GM_addStyle(".filter_filter_1JFal{background: var(--secondary-bg); overflow: hidden;} .filter_filter-input_1iiEt::placeholder{color: var(--text);}");
+    //Paint editor button contrast and extension icon fixes
+    GM_addStyle(".paint-editor_button-group-button-icon_10kVn, .color-picker_swatch-icon_Z7osI, .scratchCategoryId-music > .scratchCategoryItemIcon {filter: brightness(100);}");
 })();
