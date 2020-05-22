@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         3.Dark
 // @namespace    infinitytec.github.io
-// @version      1.6.1
+// @version      1.7
 // @description  Dark theme for 3.0. Distributed under the MIT license.
 // @author       infinitytec
 // @match        https://scratch.mit.edu/projects/*
@@ -74,4 +74,6 @@
     GM_addStyle(".filter_filter_1JFal{background: var(--secondary-bg); overflow: hidden;} .filter_filter-input_1iiEt::placeholder{color: var(--text);}");
     //Paint editor button contrast and extension icon fixes
     GM_addStyle(".paint-editor_button-group-button-icon_10kVn, .color-picker_swatch-icon_Z7osI, .scratchCategoryId-music > .scratchCategoryItemIcon {filter: brightness(100);}");
+    //Tweaks for updated paint editor
+    GM_addStyle(".paper-canvas_paper-canvas_1y588 {background-color: var(--secondary-bg); border-radius: .4rem;} .paint-editor_canvas-container_x2D0a {border: 2px solid var(--accent); border-radius: .4rem; }");
 })();
