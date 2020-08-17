@@ -39,7 +39,7 @@
     GM_addStyle(".blocklyFlyoutButtonBackground {fill: var(--accent) !important;}.blocklyFlyoutButtonBackground:hover, .blocklyFlyoutButton:hover {fill: var(--accent) !important; filter: brightness(110%) !important;}");
     GM_addStyle("blocklyFlyoutButton > text.blocklyText {fill: var(--text) !important;}");
     //Text fill of "Make A" buttons
-    GM_addStyle(".blocklyFlyoutButton .blocklyText {fill: var(--text) !important;");
+    GM_addStyle(".blocklyFlyoutButton .blocklyText {fill: var(--text) !important;}");
      //Backpack header
     GM_addStyle(".backpack_backpack-header_6ltCS {background: var(--accent); color: var(--text);}");
      //Backpack
