@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         3.Dark
 // @namespace    infinitytec.github.io
-// @version      1.7
+// @version      1.8
 // @description  Dark theme for 3.0. Distributed under the MIT license.
 // @author       infinitytec
 // @match        https://scratch.mit.edu/projects/*
@@ -43,7 +43,7 @@
      //Backpack header
     GM_addStyle(".backpack_backpack-header_6ltCS {background: var(--accent); color: var(--text);}");
      //Backpack
-    GM_addStyle(".backpack_backpack-list-inner_10a2A {background: var(--secondary-bg);} .backpack_backpack-item_hwqzQ, .sprite-selector-item_sprite-image-outer_Xs0wN, .backpack_backpack-item_hwqzQ > div {background: var(--main-bg); border-radius: 0.5rem 0.5rem 0 0;} .backpack_backpack-item_hwqzQ img {mix-blend-mode: normal;}");
+    GM_addStyle(".backpack_backpack-list-inner_10a2A {background: var(--secondary-bg);} .backpack_backpack-item_hwqzQ, .sprite-selector-item_sprite-image-outer_Xs0wN, .backpack_backpack-item_hwqzQ > div {background: var(--main-bg);} .backpack_backpack-item_hwqzQ img {mix-blend-mode: normal;}");
      //Paint & sound editor sidebar
     GM_addStyle(".selector_list-area_1Xbj_{background: var(--accent);} .selector_new-buttons_2qHDd::before {background: none;}");
      //Paint & sound editor main
@@ -58,8 +58,8 @@
     GM_addStyle(".prompt_body_18Z-I, .custom-procedures_body_SQBv6, div.custom-procedures_option-card_BtHt3 {background: var(--accent); color: var(--text);} .custom-procedures_button-row_2jBu3 > button:nth-child(1), .prompt_button-row_3Wc5Z > button:nth-child(1),.prompt_button-row_3Wc5Z > button:nth-child(1) {background: #ff3a5b;}");
     //Fullscreen view
     GM_addStyle(".stage_stage-wrapper-overlay_fmZuD, .stage-header_stage-header-wrapper-overlay_5vfJa{background: black;} .stage_stage-overlay-content_ePv_6 {border: none;} ");
-    //Library background
-    GM_addStyle(".library_library-scroll-grid_1jyXm, .modal_modal-content_1h3ll.modal_full-screen_FA4cr {background: var(--accent); color: var(--text);} ");
+    //Library and card backgrounds
+    GM_addStyle(".library_library-scroll-grid_1jyXm, .modal_modal-content_1h3ll.modal_full-screen_FA4cr, .card_step-body_2bFkf, .card_left-card_1KpEh, .card_right-card_3IrbD {background: var(--accent); color: var(--text);} ");
     //Library items & filter bar
     GM_addStyle(" .library-item_library-item-extension_3xus9, .library-item_library-item_1DcMO, .library_filter-bar_1W0DW {background: var(--accent);} .library-item_library-item-extension_3xus9 span, .library-item_featured-extension-metadata_3D8E8, .library-item_library-item-name_2qMXu {color: var(--text) !important;}");
     //Text input
@@ -70,10 +70,10 @@
     GM_addStyle(".sprite-selector-item_is-selected_24tQj {background:transparent !important;}");
     //Fixing white area around the paint editor
     GM_addStyle(".paint-editor_canvas-container_x2D0a {border: 1px solid var(--accent); overflow: hidden; }");
-    //Gallery search box fixes
-    GM_addStyle(".filter_filter_1JFal{background: var(--secondary-bg); overflow: hidden;} .filter_filter-input_1iiEt::placeholder{color: var(--text);}");
-    //Paint editor button contrast and extension icon fixes
-    GM_addStyle(".paint-editor_button-group-button-icon_10kVn, .color-picker_swatch-icon_Z7osI, .scratchCategoryId-music > .scratchCategoryItemIcon {filter: brightness(100);}");
     //Tweaks for updated paint editor
     GM_addStyle(".paper-canvas_paper-canvas_1y588 {background-color: var(--secondary-bg); border-radius: .4rem;} .paint-editor_canvas-container_x2D0a {border: 2px solid var(--accent); border-radius: .4rem; }");
+    //Tweaks for users not signed in
+    GM_addStyle(".card_card_3GG7C, .card_left-card_1KpEh, .card_right-card_3IrbD{border: 1px solid hsla(216, 49%, 90%, 0.14);}");
+    //Scrollbar
+    GM_addStyle(".blocklyScrollbarHandle {fill: #CECDCE55;} ");
 })();
